@@ -1,38 +1,135 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+}
+
+.main-window {
+  margin: 30px;
+  min-width: 600px;
+}
+
+.time {
+  margin-bottom: 30px;
+  border-bottom: solid;
+  border-color: lightseagreen;
+}
+.time h4 {
+  font-size: 30px;
+}
+
+.form-normal {
+  padding: 20px 5px;
+}
+.form-update {
+  padding: 5px 5px;
+}
+
+.row.g-3 {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.pages {
+  margin-top: 30px;
+  display: flex;
+  align-content: space-between;
+  gap: 50px;
+}
+
+.todo-container {
+  padding-top: 20px;
+  min-width: 600px;
+}
+
+.explain {
+  max-width: 400px;
+  font-size: 20px;
+  text-align: end;
+  align-self: flex-start;
+}
+
+.page-title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: lightseagreen;
+  padding-bottom: 20px;
+}
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  margin: 20px 0;
+  min-height: 50px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 2px;
+}
+
+.todo-item:hover {
+  background-color: khaki;
+}
+
+.todo-elements {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.name-date-wrapper {
+  margin-left: 5px;
+}
+.name-date-wrapper p {
+  margin-bottom: 0;
+}
+
+.check-buttons {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-item.complete {
+  margin-left: 10px;
+  background-color: mediumseagreen;
+}
+
+.fa-check:hover {
+  color: mediumseagreen;
+}
+
+.fa-check.complete {
+  background-color: mediumseagreen;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.fa-check.complete:hover {
+  background-color: white;
+  color: mediumseagreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.fa-trash-alt:hover {
+  color: red;
+}
+
+.fa-edit.none {
+  opacity: 40%;
+}
+
+.fa-edit:hover {
+  color: orange;
+}
+
+.fa-edit.active {
+  color: orange;
+}
+
+.fa-edit.none:hover {
+  color: unset;
+}
+
+@media screen and (max-width: 1000px) {
+  .pages {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .explain {
+    text-align: left;
   }
 }

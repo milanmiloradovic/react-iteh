@@ -1,0 +1,24 @@
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+  width: -moz-fit-content;
+  justify-content: flex-start;
+  margin: 10px 20px 0 10px;
+  font-size: 22px;
+}
+
+.logo-container:hover {
+  text-decoration: none;
+}
+
+.my-logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item.active {
+  text-decoration: underline;
+  text-decoration-color: khaki;
+}
